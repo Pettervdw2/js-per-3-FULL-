@@ -3,8 +3,8 @@ console.log("Het Werkt!");
 const cardContainer = document.querySelector('.card-container');
 
 
-//fetch de json 
-  fetch('http://localhost:3000/yeezy')
+//fetch json 
+fetch('http://localhost:3000/yeezy')
     .then(data => data.json())
     .then(yeezy => showYeezy(yeezy))
 
@@ -16,7 +16,6 @@ function showYeezy(yeezy) {
         htmlCode += createCard(adidasYeezy)
     }
     cardContainer.innerHTML = htmlCode;
-    makePricesClickable(); //voert makepricesclickable pas uit als de html is ingeladen
 }
 
 //functie aangemaakt om de informatie uit de json in html te zetten op een pagina
