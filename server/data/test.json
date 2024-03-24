@@ -1,0 +1,11 @@
+[
+    {
+        "title": "test1",
+        "description": "test2",
+        "imageUrl": "test3",
+        "price": "test4",
+        "sizes": [
+            "test5"
+        ]
+    }
+]
